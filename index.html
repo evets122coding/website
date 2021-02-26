@@ -8,3 +8,20 @@
     <p>Call me Ishmael.</p>
   </body>
 </html>
+
+
+curl 'https://api.intercom.io/conversations?order=desc&sort=updated_at' \
+-H 'Authorization:Bearer dG9rOmFhODNiNjgwXzlhZWNfNDI4ZF9iNzgwXzUzNDA4YmU3MzAzMzoxOjA='
+
+curl 'https://api.intercom.io/conversations/search' \
+-X POST \
+-H 'Authorization:BearerdG9rOmFhODNiNjgwXzlhZWNfNDI4ZF9iNzgwXzUzNDA4YmU3MzAzMzoxOjA=' \
+-H 'Accept:application/json' \
+-H 'Content-Type:application/json' -d
+
+{
+  "admin_id": "781236",
+  "customer": {
+    "intercom_user_id": "58c1c78946a0aa9ef45b098a"
+  }
+}
